@@ -6,6 +6,7 @@ const BookService = () => {
     const service = useLoaderData();
     const { title, _id, price, img } = service;
     const {user} = useContext(AuthContext);
+    console.log(service);
 
     const handleBookService = event =>{
         event.preventDefault();
